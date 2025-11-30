@@ -1,5 +1,4 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -7,28 +6,20 @@ import CardContent from '@mui/material/CardContent';
 import Container from '@mui/material/Container';
 
 import Stack from '@mui/material/Stack';
-import Toolbar from '@mui/material/Toolbar';
+
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import SchoolIcon from '@mui/icons-material/School';
 import HistoryIcon from '@mui/icons-material/History';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Header from '@/components/Header';
 
 export default function LandingPage() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', bgcolor: 'background.default', color: 'text.primary' }}>
       {/* Header */}
-      <AppBar position="static" color="transparent" elevation={0}>
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
-            AI English Learning
-          </Typography>
-          <Button color="primary" variant="outlined" href="/login">
-            Login
-          </Button>
-        </Toolbar>
-      </AppBar>
+      <Header />
 
       {/* Hero Section */}
       <Box sx={{ py: 8, textAlign: 'center' }}>
