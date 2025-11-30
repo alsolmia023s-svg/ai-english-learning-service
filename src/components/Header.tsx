@@ -37,13 +37,13 @@ export default function Header() {
     };
 
     return (
-        <AppBar position="static" color="transparent" elevation={0}>
+        <AppBar position="fixed" sx={{ bgcolor: 'rgba(10, 25, 47, 0.85)', backdropFilter: 'blur(10px)', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }} elevation={0}>
             <Toolbar>
                 <Typography
                     variant="h6"
                     component={Link}
                     href="/"
-                    sx={{ flexGrow: 1, fontWeight: 'bold', textDecoration: 'none', color: 'inherit' }}
+                    sx={{ flexGrow: 1, fontWeight: 'bold', textDecoration: 'none', color: '#64ffda' }}
                 >
                     AI English Learning
                 </Typography>
@@ -52,7 +52,7 @@ export default function Header() {
                     <Button disabled>Loading...</Button>
                 ) : session ? (
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                        <Typography variant="body2" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        <Typography variant="body2" sx={{ display: { xs: 'none', sm: 'block' }, color: '#ccd6f6' }}>
                             {session.user?.name}
                         </Typography>
                         <Button onClick={handleMenu} sx={{ p: 0, minWidth: 'auto' }}>
@@ -78,7 +78,7 @@ export default function Header() {
                         </Menu>
                     </Box>
                 ) : (
-                    <Button color="primary" variant="outlined" href="/auth/signin">
+                    <Button variant="outlined" href="/auth/signin" sx={{ color: '#64ffda', borderColor: '#64ffda' }}>
                         Login
                     </Button>
                 )}
