@@ -17,17 +17,30 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
                     await dbConnect();
                     const existingUser = await User.findOne({ email: user.email });
+                    const adminEmails = process.env.ADMIN_EMAILS?.split(',') || [];
+                    const role = adminEmails.includes(user.email || '') ? 'admin' : 'user';
 
                     if (!existingUser) {
                         await User.create({
                             name: user.name,
                             email: user.email,
                             image: user.image,
+                            role: role,
                         });
                     } else {
                         // Update image if changed
+                        let shouldSave = false;
                         if (existingUser.image !== user.image) {
                             existingUser.image = user.image;
+                            shouldSave = true;
+                        }
+                        // Update role if matches admin email and not already admin
+                        if (adminEmails.includes(user.email || '') && existingUser.role !== 'admin') {
+                            existingUser.role = 'admin';
+                            shouldSave = true;
+                        }
+
+                        if (shouldSave) {
                             await existingUser.save();
                         }
                     }

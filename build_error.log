@@ -1,0 +1,80 @@
+
+> seminor@0.1.0 build
+> next build --turbopack
+
+   笆ｲ Next.js 15.5.6 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ 笨・Finished writing to disk in 104ms
+
+> Build error occurred
+Error: Turbopack build failed with 4 errors:
+./src/app/admin/page.tsx:5:1
+Module not found: Can't resolve '@mui/material/Grid2'
+  3 | import * as React from 'react';
+  4 | import Box from '@mui/material/Box';
+> 5 | import Grid from '@mui/material/Grid2';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Card from '@mui/material/Card';
+  7 | import CardContent from '@mui/material/CardContent';
+  8 | import Typography from '@mui/material/Typography';
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/page.tsx:5:1
+Module not found: Can't resolve '@mui/material/Grid2'
+  3 | import * as React from 'react';
+  4 | import Box from '@mui/material/Box';
+> 5 | import Grid from '@mui/material/Grid2';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Card from '@mui/material/Card';
+  7 | import CardContent from '@mui/material/CardContent';
+  8 | import Typography from '@mui/material/Typography';
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/page.tsx:5:1
+Module not found: Can't resolve '@mui/material/Grid2'
+  3 | import * as React from 'react';
+  4 | import Box from '@mui/material/Box';
+> 5 | import Grid from '@mui/material/Grid2';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Card from '@mui/material/Card';
+  7 | import CardContent from '@mui/material/CardContent';
+  8 | import Typography from '@mui/material/Typography';
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/page.tsx:5:1
+Module not found: Can't resolve '@mui/material/Grid2'
+  3 | import * as React from 'react';
+  4 | import Box from '@mui/material/Box';
+> 5 | import Grid from '@mui/material/Grid2';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Card from '@mui/material/Card';
+  7 | import CardContent from '@mui/material/CardContent';
+  8 | import Typography from '@mui/material/Typography';
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./src/app/admin/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

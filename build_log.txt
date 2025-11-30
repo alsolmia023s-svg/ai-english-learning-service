@@ -1,0 +1,80 @@
+
+> seminor@0.1.0 build
+> next build --turbopack
+
+   ▲ Next.js 15.5.6 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Finished writing to disk in 68ms
+
+> Build error occurred
+Error: Turbopack build failed with 4 errors:
+./src/app/admin/page.tsx:5:1
+Module not found: Can't resolve '@mui/material/Grid2'
+[0m [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m'react'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBox[39m [36mfrom[39m [32m'@mui/material/Box'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mGrid[39m [36mfrom[39m [32m'@mui/material/Grid2'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m [33mCard[39m [36mfrom[39m [32m'@mui/material/Card'[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m [33mCardContent[39m [36mfrom[39m [32m'@mui/material/CardContent'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m [33mTypography[39m [36mfrom[39m [32m'@mui/material/Typography'[39m[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/page.tsx:5:1
+Module not found: Can't resolve '@mui/material/Grid2'
+[0m [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m'react'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBox[39m [36mfrom[39m [32m'@mui/material/Box'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mGrid[39m [36mfrom[39m [32m'@mui/material/Grid2'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m [33mCard[39m [36mfrom[39m [32m'@mui/material/Card'[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m [33mCardContent[39m [36mfrom[39m [32m'@mui/material/CardContent'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m [33mTypography[39m [36mfrom[39m [32m'@mui/material/Typography'[39m[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/page.tsx:5:1
+Module not found: Can't resolve '@mui/material/Grid2'
+[0m [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m'react'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBox[39m [36mfrom[39m [32m'@mui/material/Box'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mGrid[39m [36mfrom[39m [32m'@mui/material/Grid2'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m [33mCard[39m [36mfrom[39m [32m'@mui/material/Card'[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m [33mCardContent[39m [36mfrom[39m [32m'@mui/material/CardContent'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m [33mTypography[39m [36mfrom[39m [32m'@mui/material/Typography'[39m[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/page.tsx:5:1
+Module not found: Can't resolve '@mui/material/Grid2'
+[0m [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m'react'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBox[39m [36mfrom[39m [32m'@mui/material/Box'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mGrid[39m [36mfrom[39m [32m'@mui/material/Grid2'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m [33mCard[39m [36mfrom[39m [32m'@mui/material/Card'[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m [33mCardContent[39m [36mfrom[39m [32m'@mui/material/CardContent'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m [33mTypography[39m [36mfrom[39m [32m'@mui/material/Typography'[39m[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./src/app/admin/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/page.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
